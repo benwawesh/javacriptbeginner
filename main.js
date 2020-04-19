@@ -94,12 +94,12 @@ const arrays= [
 },
 {
 	id:12,
-	text:"take out trash",
-	isComplete:true
+	text:"eat food",
+	isComplete:false
 },
 {
 	id:12,
-	text:"take out trash",
+	text:"take out the bean",
 	isComplete:true
 }
 ]
@@ -118,5 +118,40 @@ for (let items of arrays){
 }
 let items=0;
 
+const working =arrays.forEach(function(any){
+	console.log(any)
+})
 
+// MAPPING
+ arrays.map(function(any){
+	console.log(any)
+})
+const todoCompleted = arrays.filter(function(any){
+	return any.isComplete ===true
+}).map(function(any){
+	return any.text
+})
+console.log (todoCompleted)
+
+const x=10;
+const y=30
+if (x>=y){
+	console.log("x is greater than Y")
+}
+else if(y>=x){
+	console.log ("y is greater than X")
+}
+const x=10
+if (x>=10){
+	console.log("this is greater")
+}
+else if (x<=10){
+	console.log("this is smaller")
+}
+
+
+
+const x=10;
+const color = x>10? 'it is red' :"it is grey"
+console.log(color)
 
