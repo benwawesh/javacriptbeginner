@@ -6,7 +6,7 @@
 // fruits.pop()
 // console.log(fruits)
 
-// object literals
+// // object literals
 
 // const person= {
 // firstname: 'Benson',
@@ -17,7 +17,7 @@
 //  }
 //  console.log(person.hobbies[2])
 
-// DESTRUCTURING IN JAVASCRIPT
+// // DESTRUCTURING IN JAVASCRIPT
 // const objects={
 // 	firstname:"benson",
 // 	secondname: 'waweru',
@@ -34,7 +34,7 @@
 // const {x:a,y:b,z}=vowel
 // console.log(a,b)
 
-// NESTED OBJECTS
+// // NESTED OBJECTS
 // const nest = {
 // 	start: {x:2, y:10},
 // 	finish: {x:3, y:30}
@@ -55,23 +55,26 @@
 // console.log(jsontodo)
 
 
-// FOR IN JAVASCRIPT
+// // FOR IN JAVASCRIPT
 
-// const arrays= [
+// const arrayss= [
+// {{
+
+
+// 	id:12,
+// 	text:"take out trash",
+// 	isComplete:true
+// },
 // {
 // 	id:12,
 // 	text:"take out trash",
 // 	isComplete:true
-// }
+// },
 // {
 // 	id:12,
 // 	text:"take out trash",
 // 	isComplete:true
-// }
-// {
-// 	id:12,
-// 	text:"take out trash",
-// 	isComplete:true
+
 // }
 // ]
 
@@ -84,9 +87,9 @@
 // 	console.log(a)
 // 	a++
 // }
-// HIGH ORDER ITERATION
-// FOREACH
-// const arrays= [
+// // HIGH ORDER ITERATION
+// // FOREACH
+// const arraysss= [
 // {
 // 	id:12,
 // 	text:"take out trash",
@@ -103,30 +106,30 @@
 // 	isComplete:true
 // }
 // ]
-// for(let i=0; i<arrays.length; i++){
-// 	console.log(arrays[i])
+// for(let i=0; i<arraysss.length; i++){
+// 	console.log(arraysss[i])
 // }
 // let i=0;
-// while (i<=arrays.length){
-// 	console.log(arrays[i])
+// while (i<=arraysss.length){
+// 	console.log(arraysss[i])
 // 	i++
 // }
-//  A BETTER WAY OF WRITING THE FOR METHOD
+//  // A BETTER WAY OF WRITING THE FOR METHOD
 
-// for (let items of arrays){
+// for (let items of arraysss){
 // 	console.log(items)
 // }
 // let items=0;
 
-// const working =arrays.forEach(function(any){
+// const working =arraysss.forEach(function(any){
 // 	console.log(any)
 // })
 
 // // MAPPING
-//  arrays.map(function(any){
+//  arraysss.map(function(any){
 // 	console.log(any)
 // })
-// const todoCompleted = arrays.filter(function(any){
+// const todoCompleted = arraysss.filter(function(any){
 // 	return any.isComplete ===true
 // }).map(function(any){
 // 	return any.text
@@ -156,7 +159,7 @@
 // console.log(color)
 
 
-// SWITCH 
+// // SWITCH 
 // const a=50
 // switch (a){
 // 	case 10:
@@ -181,7 +184,7 @@
 // const todo=[1,4,5,8,10]
 // todo.forEach((any)=>console.log(any))
 
-// USING THIS KEY WORD
+// // USING THIS KEY WORD
 
 // let myTodos = {
 // 	day:'moday',
@@ -203,7 +206,7 @@
 
 // console.log(add())
 
-// REVISION
+// // REVISION
 //  const arrays= [
 // {
 // 	id:12,
@@ -232,15 +235,37 @@
 // })
 // console.log(dataa)
 
-// OBJECT ORIENTED PROGRAMMING
+// // OBJECT ORIENTED PROGRAMMING
 
-// CONSTRUCTURE FUNCTION
+// // CONSTRUCTURE FUNCTION
 
-function Person(firstname,lastName,dob){
-	this.firstname=firstname;
-	this.lastName=lastName;
-	this.dob=dob;
-}
-// instantiate
-const perso1= new Person("benson","waweru",1992)
-console.log(perso1.dob)
+// function Person(firstname,lastName,dob){
+// 	this.firstname=firstname;
+// 	this.lastName=lastName;
+// 	this.dob=new Date(dob);
+// 	this.age= function data(){
+// 		return 2020-this.dob
+// 	}
+// 	// THE BEST WAY TO ADD A PROPERTY IS BY THE USE OF PROTOTYPE METHOD
+
+// }
+// Person.prototype.ages= function(){
+// 	return 2020-this.dob
+// }
+// // instantiate
+// const perso1= new Person("benson","waweru",1992)
+// console.log(perso1.age())
+// console.log(perso1.ages())
+
+// // NOW WE CAN DO SIMILAR THING USING ES6 WHICH IS INTRODUCTION TO CLASSES
+
+// class Person{
+// 	constructor(firstname,lastName,dob){
+// 	this.firstname=firstname;
+// 	this.lastName=lastName;
+// 	this.dob=new Date(dob);
+// }
+// }
+
+// const prn1= new Person("benson","waweru",1999)
+// console.log(prn1.dob)
