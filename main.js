@@ -183,12 +183,64 @@
 
 // USING THIS KEY WORD
 
-let myTodos = {
-	day:'moday',
-	meetings: 0,
-	meetDone:4,
-	addMeetings : function(){
-		console.log('hey, I am a function')
-	}
+// let myTodos = {
+// 	day:'moday',
+// 	meetings: 0,
+// 	meetDone:4,
+// 	addMeetings : function(ans){
+// 		this.meetings=this.meetings+ans
+// 		return this.meetings
+// 	},
+// 	meetingalreadydone: function(){
+// 		this.meetDone=this.meetings+this.meetDone
+// 		return this.meetDone
+// 	}
+// }
+// console.log(myTodos.addMeetings(3))
+// console.log(myTodos.meetingalreadydone())
+
+// const add=(num=30, num2=10)=>num+num2
+
+// console.log(add())
+
+// REVISION
+//  const arrays= [
+// {
+// 	id:12,
+// 	text:"take out trash",
+// 	isComplete:true
+// },
+// {
+// 	id:12,
+// 	text:"take out trash",
+// 	isComplete:false
+// },
+// {
+// 	id:12,
+// 	text:"take out trash",
+// 	isComplete:true
+// }
+// ]
+// const data =arrays.forEach(function(any){
+// 	return any
+// })
+// // console.log(data())
+// const dataa =arrays.filter(function(any){
+// 	return any.isComplete === true
+// }).map(function(any){
+// 	return any.text
+// })
+// console.log(dataa)
+
+// OBJECT ORIENTED PROGRAMMING
+
+// CONSTRUCTURE FUNCTION
+
+function Person(firstname,lastName,dob){
+	this.firstname=firstname;
+	this.lastName=lastName;
+	this.dob=dob;
 }
-console.log(myTodos.day)
+// instantiate
+const perso1= new Person("benson","waweru",1992)
+console.log(perso1.dob)
